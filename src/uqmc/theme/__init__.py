@@ -32,7 +32,7 @@ def initialize(context):
     # once.
 
     content_types, constructors, ftis = atapi.process_types(
-        atapi.listtypes(config.PROJECTNAME),
+        atapi.listTypes(config.PROJECTNAME),
         config.PROJECTNAME)
 
     # Now initialize all these content types. The initialization process takes
