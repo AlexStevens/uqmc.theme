@@ -7,14 +7,6 @@
     css:if-content='#visual-portal-wrapper'
     >
 
-  <theme href='main.html' />
-  <drop css:theme='.drop'/>
-
-  <!-- HEAD -->
-  <before theme-children='/html/head' content='/html/head' />
-  <merge attributes='class' css:content='body' css:theme='body' />
-  <copy attributes='id dir' css:content='body' css:theme='body' />
-
   <!-- HEADER -->
   <replace css:content='#portal-personaltools'>
     <ul id='portal-personaltools'>
@@ -27,12 +19,5 @@
       </xsl:for-each>
     </ul>
   </replace>
-  <replace css:content='#portal-personaltools' css:theme='#personal_bar'/>
 
-  <!-- CONTENT -->
-  <replace css:content='#portal-globalnav' css:theme='#global_nav'/>
-  <replace css:content='#portal-columns' css:theme='#portal_container'/>
-
-  <!-- FOOTER -->
-  <replace css:content='#portal-footer-wrapper' css:theme='#footer' />
 </rules>
