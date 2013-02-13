@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<object name="portal_actions" meta_type="Plone Actions Tool"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+  <object name="user" meta_type="CMF Action Category">
+    <object name="home" meta_type="CMF Action" i18n:domain="plone" insert-before="*">
+      <property name="title" i18n:translate="">Home</property>
+      <property name="description" i18n:translate="">UQMC Home</property>
+      <property name="url_expr">string:${portal_url}</property>
+      <property name="icon_expr"></property>
+      <property name="available_expr"></property>
+      <property name="permissions">
+        <element value="View"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object name="facebook" meta_type="CMF Action" i18n:domain="plone" insert-after="*">
+      <property name="title" i18n:translate="">Facebook</property>
+      <property name="description" i18n:translate="">UQMC Facebook Group</property>
+      <property name="url_expr">string:https://www.facebook.com/groups/uqmountainclub/</property>
+      <property name="icon_expr"></property>
+      <property name="available_expr"></property>
+      <property name="permissions">
+        <element value="View"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object name="forum" meta_type="CMF Action" i18n:domain="plone" insert-after="*">
+      <property name="title" i18n:translate="">Forum</property>
+      <property name="description" i18n:translate="">UQMC Forum</property>
+      <property name="url_expr">string:http://uqmc.yuku.com/</property>
+      <property name="icon_expr"></property>
+      <property name="available_expr"></property>
+      <property name="permissions">
+        <element value="View"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+  </object>
+</object>

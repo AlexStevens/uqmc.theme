@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rules
+    xmlns='http://namespaces.plone.org/diazo'
+    xmlns:css='http://namespaces.plone.org/diazo/css'
+    xmlns:xsl='http://www.w3.org/1999/XSL/Transform'
+    xmlns:xi='http://www.w3.org/2001/XInclude'
+    css:if-content='#visual-portal-wrapper'
+    >
+
+  <theme href='main.html' />
+  <drop css:theme='.drop'/>
+
+  <!-- HEAD -->
+  <before theme-children='/html/head' content='/html/head' />
+  <merge attributes='class' css:content='body' css:theme='body' />
+  <copy attributes='id dir' css:content='body' css:theme='body' />
+
+  <!-- HEADER -->
+  <replace css:content='#portal-personaltools'>
+    <ul id='portal-personaltools'>
+      <xsl:copy-of css:select='#anon-personalbar' />
+      <li class='personaltools-login'>
+        <xsl:copy-of select="./dt/a/text()" />
+      </li>
+      <xsl:for-each css:select='dd.actionMenuContent ul'>
+        <xsl:copy-of select="./li" />
+      </xsl:for-each>
+    </ul>
+  </replace>
+  <replace css:content='#portal-personaltools' css:theme='#personal_bar'/>
+
+  <!-- CONTENT -->
+  <replace css:content='#portal-globalnav' css:theme='#global_nav'/>
+  <replace css:content='#portal-columns' css:theme='#portal_container'/>
+
+  <!-- FOOTER -->
+  <replace css:content='#portal-footer-wrapper' css:theme='#footer' />
+</rules>

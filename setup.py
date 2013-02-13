@@ -29,7 +29,8 @@ setup(name='uqmc.theme',
       zip_safe=False,
       install_requires=[
             'setuptools',
-            'Products.CMFPlone',
+            'plone.app.theming',
+            'plone.app.jquery',
             'five.grok',
         ],
       entry_points="""
