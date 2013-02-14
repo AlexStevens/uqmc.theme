@@ -155,9 +155,15 @@ sub {
     padding: 0.25em 0.5em;
     width: 100%;
 }
+
+#portal-personaltools a {
+    color: White;
+}
+
 #portal-personaltools #anon-personalbar a {
     float: left;
     margin: 0 0.5em;
+    color: White;
 }
 
 #portal-languageselector {

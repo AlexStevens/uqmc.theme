@@ -12,7 +12,9 @@
     <ul id='portal-personaltools'>
       <xsl:copy-of css:select='#anon-personalbar' />
       <li class='personaltools-login'>
-        <xsl:copy-of select="./dt/a/text()" />
+        <a>
+          <xsl:copy-of select="./dt/a/text()" />
+        </a>
       </li>
       <xsl:for-each css:select='dd.actionMenuContent ul'>
         <xsl:copy-of select="./li" />
