@@ -160,15 +160,16 @@ sub {
 #portal-personaltools > *:after {
     color: White;
     content: "|";
+    position: relative;
+    top: -0.1em;
+}
+#portal-personaltools > *:last-child:after {
+    color: transparent;
+    content: "";
 }
 
 #portal-personaltools > dl.actionMenu {
-    margin-left: 0;
-}
-
-#portal-personaltools > *:last-child:after {
-    color: transparent;
-    content: "|";
+    margin: 0;
 }
 
 #portal-personaltools:after:last-child {
