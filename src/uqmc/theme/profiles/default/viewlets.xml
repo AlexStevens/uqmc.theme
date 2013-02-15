@@ -4,7 +4,7 @@
     <viewlet name="plone.personal_bar" />
     <viewlet name="plone.searchbox" />
     <viewlet name="plone.logo" />
-    <viewlet name='plone.global_sections' />
+    <viewlet name="plone.global_sections" />
   </hidden>
   <hidden manager="plone.abovecontent" skinname="Sunburst Theme">
     <viewlet name="plone.path_bar" />
@@ -13,8 +13,11 @@
     <viewlet name="plone.footer" />
     <viewlet name="plone.colophon" />
   </hidden>
+  <order manager="plone.portalheader" skinname="Sunburst Theme">
+    <viewlet name="uqmc.theme.personal_bar" insert-before="plone.personal_bar" />
+  </order>
   <order manager="plone.abovecontent" skinname="Sunburst Theme">
-    <viewlet name='plone.global_sections' />
+    <viewlet name="plone.global_sections" />
   </order>
   <order manager="plone.portalfooter" skinname="Sunburst Theme">
     <viewlet name="uqmc.footer" insert-before="*" />
