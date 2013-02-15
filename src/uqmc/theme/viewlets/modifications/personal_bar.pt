@@ -2,7 +2,7 @@
      i18n:domain="plone">
 
 <p class="hiddenStructure" i18n:translate="heading_personal_tools">Personal tools</p>
-<ul>
+<ul id="portal-personaltools">
 
   <tal:dup repeat="action view/user_actions">
     <li tal:attributes="id string:personaltools-${action/id}"
@@ -18,55 +18,53 @@
     </li>
   </tal:dup>
 
-  <li id="personaltools-member">
-    <dl class="actionMenu deactivated" id="portal-personaltools"
-        tal:condition="python:view.user_actions and not view.anonymous">
-      <tal:block condition="not: view/anonymous">
-      <dt class="actionMenuHeader">
-        <a id="user-name"
-           tal:attributes="href view/homelink_url"
-           tal:content="view/user_name">
-            John
-        </a>
-      </dt>
-      <dd class="actionMenuContent">
-        <ul>
-          <tal:dup repeat="action view/user_actions">
-            <li tal:attributes="id string:personaltools-${action/id}"
-                tal:define="oldid action/id"
-                tal:condition="python:'before' not in str(oldid) and 'after' not in str(oldid)">
-                <a href=""
-                   tal:attributes="href action/url;
-                                   target action/link_target|nothing"
-                   tal:content="action/title"
-                   i18n:translate="">
-                    action title
-                </a>
-            </li>
-          </tal:dup>
-        </ul>
-      </dd>
-      </tal:block>
-    </dl>
+  <dl class="actionMenu deactivated"
+      tal:condition="python:view.user_actions and not view.anonymous">
+    <tal:block condition="not: view/anonymous">
+    <dt class="actionMenuHeader">
+      <a id="user-name"
+         tal:attributes="href view/homelink_url"
+         tal:content="view/user_name">
+          John
+      </a>
+    </dt>
+    <dd class="actionMenuContent">
+      <ul>
+        <tal:dup repeat="action view/user_actions">
+          <li tal:attributes="id string:personaltools-${action/id}"
+              tal:define="oldid action/id"
+              tal:condition="python:'before' not in str(oldid) and 'after' not in str(oldid)">
+              <a href=""
+                 tal:attributes="href action/url;
+                                 target action/link_target|nothing"
+                 tal:content="action/title"
+                 i18n:translate="">
+                  action title
+              </a>
+          </li>
+        </tal:dup>
+      </ul>
+    </dd>
+    </tal:block>
+  </dl>
 
-    <ul class="actionMenu deactivated" id="portal-personaltools"
-        tal:condition="python:view.user_actions and view.anonymous">
-      <li id="anon-personalbar">
-        <tal:actions repeat="action view/user_actions">
-            <a href=""
-               tal:define="oldid action/id"
-               tal:condition="python:'before' not in str(oldid) and 'after' not in str(oldid)"
-               tal:attributes="href action/url;
-                               id string:personaltools-${action/id};
-                               target action/link_target|nothing;"
-               tal:content="action/title"
-               i18n:translate="">
-                action title
-            </a>
-        </tal:actions>
-      </li>
-    </ul>
-  </li>
+  <ul class="actionMenu deactivated"
+      tal:condition="python:view.user_actions and view.anonymous">
+    <li id="anon-personalbar">
+      <tal:actions repeat="action view/user_actions">
+          <a href=""
+             tal:define="oldid action/id"
+             tal:condition="python:'before' not in str(oldid) and 'after' not in str(oldid)"
+             tal:attributes="href action/url;
+                             id string:personaltools-${action/id};
+                             target action/link_target|nothing;"
+             tal:content="action/title"
+             i18n:translate="">
+              action title
+          </a>
+      </tal:actions>
+    </li>
+  </ul>
 
   <tal:dup repeat="action view/user_actions">
     <li tal:attributes="id string:personaltools-${action/id}"

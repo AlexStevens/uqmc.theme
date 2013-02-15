@@ -62,10 +62,13 @@
             <div tal:replace="structure provider:plone.portaltop" />
 </div>
         </div>
-    <div id="portal-between" class="row">
+
+<div id="middle-container" class="row">
+    <div id="portal-between" class="">
         <div tal:replace="structure provider:uqmc.theme.betweencontent" />
     </div>
-    <div id="portal-columns" class="row">
+
+    <div id="portal-columns" class="">
 
         <div id="portal-column-content" class="cell" tal:attributes="class classes/content">
 
@@ -159,7 +162,7 @@
         </div>
         </tal:notajax>
     </div>
-
+</div>
 
     <div id="portal-footer-wrapper"
         class="row"

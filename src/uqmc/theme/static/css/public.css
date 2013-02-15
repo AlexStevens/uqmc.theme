@@ -125,6 +125,7 @@ sub {
 
 #portal-globalnav {
     clear: both;
+    float: left;
     /* ensure top navigation dont touches portlets, content etc.. #10491 */
     margin: 0 0 24px 0;
 }
@@ -153,16 +154,33 @@ sub {
 #portal-personaltools {
     background: rgba(0, 0, 0, 0.8);
     padding: 0.25em 0.5em;
-    width: 100%;
+    display: inline-block;
+}
+
+#portal-personaltools > *:after {
+    color: White;
+    content: "|";
+}
+
+#portal-personaltools > dl.actionMenu {
+    margin-left: 0;
+}
+
+#portal-personaltools > *:last-child:after {
+    color: transparent;
+    content: "|";
+}
+
+#portal-personaltools:after:last-child {
+    color: transparent;
+}
+
+#portal-personaltools .actionMenu, #portal-personaltools .actionMenu > dt > a, #portal-personaltools dl.actionMenu > dt {
+    float: none;
+    display: inline !important;
 }
 
 #portal-personaltools a {
-    color: White;
-}
-
-#portal-personaltools #anon-personalbar a {
-    float: left;
-    margin: 0 0.5em;
     color: White;
 }
 
@@ -294,16 +312,7 @@ input.searchField {
 /* @group Site actions */
 
 #portal-siteactions {
-    font-size: 85%;
-    padding-bottom: 2em;
-    text-align: center;
-    clear: left;
-}
-#portal-siteactions li {
-    margin-right: 0.5em;
-}
-#portal-siteactions li a:hover {
-    color: #75ad0a
+    display: none;
 }
 
 /* @end */
