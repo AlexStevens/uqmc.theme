@@ -2,7 +2,7 @@
 <object name="portal_actions" meta_type="Plone Actions Tool"
     xmlns:i18n="http://xml.zope.org/namespaces/i18n">
   <object name="user" meta_type="CMF Action Category">
-    <object name="home-pre" meta_type="CMF Action" i18n:domain="plone" insert-before="*">
+    <object name="home-before" meta_type="CMF Action" i18n:domain="plone" insert-before="*">
       <property name="title" i18n:translate="">Home</property>
       <property name="description" i18n:translate="">UQMC Home</property>
       <property name="url_expr">string:${portal_url}</property>
@@ -13,7 +13,7 @@
       </property>
       <property name="visible">True</property>
     </object>
-    <object name="facebook-post" meta_type="CMF Action" i18n:domain="plone" insert-after="*">
+    <object name="facebook-after" meta_type="CMF Action" i18n:domain="plone" insert-after="*">
       <property name="title" i18n:translate="">Facebook</property>
       <property name="description" i18n:translate="">UQMC Facebook Group</property>
       <property name="url_expr">string:https://www.facebook.com/groups/uqmountainclub/</property>
@@ -24,7 +24,7 @@
       </property>
       <property name="visible">True</property>
     </object>
-    <object name="forum-post" meta_type="CMF Action" i18n:domain="plone" insert-after="*">
+    <object name="forum-after" meta_type="CMF Action" i18n:domain="plone" insert-after="*">
       <property name="title" i18n:translate="">Forum</property>
       <property name="description" i18n:translate="">UQMC Forum</property>
       <property name="url_expr">string:http://uqmc.yuku.com/</property>
@@ -34,6 +34,9 @@
         <element value="View"/>
       </property>
       <property name="visible">True</property>
+    </object>
+    <object name="login">
+      <property name="title" i18n:translate="">Member Entrance</property>
     </object>
   </object>
 </object>

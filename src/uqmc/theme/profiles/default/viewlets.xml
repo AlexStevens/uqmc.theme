@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <object>
   <hidden manager="plone.portalheader" skinname="Sunburst Theme">
+    <viewlet name="plone.personal_bar" />
     <viewlet name="plone.searchbox" />
     <viewlet name="plone.logo" />
     <viewlet name='plone.global_sections' />

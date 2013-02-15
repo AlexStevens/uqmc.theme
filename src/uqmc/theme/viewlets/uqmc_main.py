@@ -10,7 +10,7 @@ grok.layer(IThemeSpecific)
 
 
 class FooterViewlet(grok.Viewlet):
-    grok.name('uqmc.footer')
+    grok.name('uqmc.theme.footer')
     grok.context(Interface)
     grok.viewletmanager(IPortalFooter)
     grok.order(1)

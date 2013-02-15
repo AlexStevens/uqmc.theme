@@ -44,10 +44,19 @@
       />
 
   <browser:viewlet
-      name="uqmc.themes.logo"
+      name="uqmc.theme.logo"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class="plone.app.layout.viewlets.common.LogoViewlet"
       template="viewlets/templates/logo.pt"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View"
+      />
+
+  <browser:viewlet
+      name="uqmc.theme.personal_bar"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class="plone.app.layout.viewlets.common.PersonalBarViewlet"
+      template="viewlets/templates/personal_bar.pt"
       layer=".interfaces.IThemeSpecific"
       permission="zope2.View"
       />
