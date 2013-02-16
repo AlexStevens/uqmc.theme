@@ -8,6 +8,16 @@ def install(context):
         if folder in portal:
             portal.manage_delObjects([folder])
 
+    if 'landing' not in portal:
+        portal.invokeFactory(
+                'Document',
+                'landing',
+                title = ' '
+            )
+        landing = portal['landing']
+        landing.portal_workflow.doActionFor(landing, 'publish')
+        portal.setDefaultPage('landing')
+
     if 'about' not in portal:
         portal.invokeFactory(
                 'Folder',
