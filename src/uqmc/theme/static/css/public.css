@@ -683,7 +683,21 @@ dd.image-caption {
 /* @group Footer */
 
 #portal-footer {
+    font-size: 30px;
     font-family: MuseoSlab500Regular;
+    line-height: 1em;
+}
+
+#portal-footer a {
+    text-decoration: underline;
+}
+
+#portal-footer div {
+    display: inline-block;
+    padding: 0.5em 0.75em;
+}
+
+#portal-footer #news-container {
     background: #ee2f24; /* Old browsers */
     background: -moz-linear-gradient(left, #ee2f24 0%, #bf1e6f 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ee2f24), color-stop(100%,#bf1e6f)); /* Chrome,Safari4+ */
@@ -692,8 +706,6 @@ dd.image-caption {
     background: -ms-linear-gradient(left, #ee2f24 0%,#bf1e6f 100%); /* IE10+ */
     background: linear-gradient(to right, #ee2f24 0%,#bf1e6f 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee2f24', endColorstr='#bf1e6f',GradientType=1 ); /* IE6-9 */
-    padding: 1em;
-    line-height: 2em;
 }
 
 #portal-colophon {
