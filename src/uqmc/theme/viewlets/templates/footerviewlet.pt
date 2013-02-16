@@ -1,4 +1,3 @@
-<div id="portal-footer">
-  <p>Testing UQMC Footer</p>
-  <div class="visualClear"></div>
+<div id="portal-footer" tal:define="item viewlet/get_newest_newsitem" tal:condition="item">
+  <a tal:content="item/Title" tal:attributes="href item/getURL">Testing UQMC Footer</a>
 </div>
