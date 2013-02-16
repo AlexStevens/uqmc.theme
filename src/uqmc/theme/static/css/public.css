@@ -107,13 +107,15 @@ sub {
 
 #portal-logo {
     font-family: MuseoSlab500Regular;
+    font-weight: bold;
     display: inline-block;
     margin: 1.375em 0;
+    margin-left: 3.5em;
 }
 #portal-logo a {
-    font-size: 72px;
-    color: #e32e36;
-    background: -webkit-linear-gradient(left, #e32e36, #bf1e6f);
+    font-size: 128px;
+    color: #ee2f24;
+    background: -webkit-linear-gradient(left, #ee2f24, #bf1e6f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -136,6 +138,7 @@ sub {
 }
 #portal-globalnav li a {
     display: inline-block;
+    font-size: 26px;
     padding: 12px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.8);
@@ -145,11 +148,11 @@ sub {
 
 #portal-globalnav .selected a,
 #portal-globalnav a:hover {
-    background: #e32e36;
+    background: #ee2f24;
     color: White;
 }
 #portal-globalnav .selected a:hover {
-    background: #e32e36;
+    background: #ee2f24;
     color: White;
 }
 
@@ -157,8 +160,22 @@ sub {
     font-family: MuseoSlab500Regular;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.8);
-    padding: 0.25em 0.5em;
+    padding: 0.25em 1.5em;
     display: inline-block;
+    line-height: 3em;
+}
+
+#portal-personaltools a {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#personaltools-home a {
+    text-decoration: none;
+}
+
+#portal-personaltools #user-name {
+    text-transform: capitalize;
 }
 
 #portal-personaltools > *:after {
@@ -167,7 +184,7 @@ sub {
     position: relative;
     top: -0.1em;
 }
-#portal-personaltools > *:last-child:after {
+#portal-personaltools > *:last-child:after, #personaltools-home:after {
     color: transparent;
     content: "";
 }
@@ -484,6 +501,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 /* Special case of #content - TinyMCE */
 body#content {
     margin: 1em;
+    background: transparent !important;
 }
 
 #content h1 {
@@ -666,14 +684,14 @@ dd.image-caption {
 
 #portal-footer {
     font-family: MuseoSlab500Regular;
-    background: #e32e36; /* Old browsers */
-    background: -moz-linear-gradient(left, #e32e36 0%, #bf1e6f 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e32e36), color-stop(100%,#bf1e6f)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, #e32e36 0%,#bf1e6f 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, #e32e36 0%,#bf1e6f 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, #e32e36 0%,#bf1e6f 100%); /* IE10+ */
-    background: linear-gradient(to right, #e32e36 0%,#bf1e6f 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e32e36', endColorstr='#bf1e6f',GradientType=1 ); /* IE6-9 */
+    background: #ee2f24; /* Old browsers */
+    background: -moz-linear-gradient(left, #ee2f24 0%, #bf1e6f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ee2f24), color-stop(100%,#bf1e6f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #ee2f24 0%,#bf1e6f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #ee2f24 0%,#bf1e6f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #ee2f24 0%,#bf1e6f 100%); /* IE10+ */
+    background: linear-gradient(to right, #ee2f24 0%,#bf1e6f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee2f24', endColorstr='#bf1e6f',GradientType=1 ); /* IE6-9 */
     padding: 1em;
     line-height: 2em;
 }
@@ -691,5 +709,9 @@ dd.image-caption {
 #portal-colophon a {
     color: #444;
 }
+
+#content .ploneSkin .mceEditorFocus .mceIframeContainer { background: transparent;}
+#content .ploneSkin table.mceLayout td.mceToolbar { background: White }
+
 
 /* @end */

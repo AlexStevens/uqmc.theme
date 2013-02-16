@@ -27,6 +27,13 @@ div.cell {
 .width-5\3a 6 { width:  83.333%    }
 .width-full   { width:  100%  }
 
+.position-0\3a 6 { margin-left:  0%    }
+.position-1\3a 6 { margin-left:  16.666%    }
+.position-2\3a 6 { margin-left:  33.333%    }
+.position-3\3a 6 { margin-left:  50%    }
+.position-4\3a 6 { margin-left:  66.666%    }
+.position-5\3a 6 { margin-left:  83.333%    }
+
 #portal-column-content > div,
 #portal-column-one > div,
 #portal-column-two > div,

@@ -2,8 +2,10 @@
      i18n:domain="plone">
 
 <p class="hiddenStructure" i18n:translate="heading_personal_tools">Personal tools</p>
-<ul id="portal-personaltools">
-
+<ul id="portal-personaltools" class="position-1:6">
+  <li id="personaltools-home">
+    <a tal:attributes="href context/portal_url" class="home-caret"></a>
+  </li>
   <tal:dup repeat="action view/user_actions">
     <li tal:attributes="id string:personaltools-${action/id}"
         tal:define="oldid action/id"

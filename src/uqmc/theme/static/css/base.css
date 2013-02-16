@@ -812,7 +812,8 @@ div.overlay div.close {
 }
 
 .pb-ajax, .pb-image, .overlay iframe {
-    background-color: #fff;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
     border: 1px solid #999;
     white-space: normal;
     box-shadow: 0 0 3em 0.5em #666;
@@ -999,6 +1000,10 @@ a.historyComparePrevious span {
 }
 .icons-on .contenttype-topic {
     background: no-repeat transparent 0px -1724px url(../images/contenttypes-sprite.png);
+}
+.home-caret {
+    padding-left: 20px;
+    background: no-repeat transparent 0px -1689px url(../images/contenttypes-sprite.png);
 }
 
 /* These should only appear in the add menu */

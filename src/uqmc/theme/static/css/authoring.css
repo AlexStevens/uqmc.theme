@@ -75,7 +75,7 @@
 #content li.formTab a:hover,
 #content-core li.formTab a.selected,
 #content-core li.formTab a:hover {
-    background: #e32e36;
+    background: #ee2f24;
     color: White;
     border-top-right-radius: 0.5em;
     border-top-left-radius: 0.5em;
@@ -130,7 +130,7 @@ div.field span.required:after {
     padding: 0 0.75em;
 }
 #portal-personaltools dd a:hover {
-    background: #e32e36;
+    background: #ee2f24;
     color: White;
 }
 
@@ -151,7 +151,7 @@ div.field span.required:after {
 }
 #contentActionMenus dl.actionMenu.activated dd a:hover,
 #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
-    background-color: #e32e36 !important;
+    background-color: #ee2f24 !important;
 }
 #contentActionMenus dl.actionMenu {
     line-height: 2em;
