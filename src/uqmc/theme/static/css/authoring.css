@@ -4,12 +4,15 @@
 
 /* Color differences between the two tab types */
 #content ul.formTabs {
-    background-color: #ddd;
-    border: 0.3em solid #ddd;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+    border: 0.3em solid transparent;
 }
 #edit-bar {
-    background-color: #75ad0a;
-    border: 0.25em solid #75ad0a;
+    color: White;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+    border: 0.25em solid transparent;
     font-size: 80%;
     min-height: 2em;
     margin-bottom: 1em;
@@ -17,7 +20,6 @@
 }
 #content-views {
     float: left;
-    background-color: #75ad0a;
 }
 /* fix shift on content views list under ie6 */
 /* .ie6 is set on <html> by Modernizr library */
@@ -73,8 +75,8 @@
 #content li.formTab a:hover,
 #content-core li.formTab a.selected,
 #content-core li.formTab a:hover {
-    background: White;
-    color: Black;
+    background: #e32e36;
+    color: White;
     border-top-right-radius: 0.5em;
     border-top-left-radius: 0.5em;
     -webkit-border-top-right-radius: 0.5em;
@@ -119,6 +121,7 @@ div.field span.required:after {
 }
 #portal-personaltools dd {
     margin-top: 0.25em;
+    background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.8);
     padding-bottom: 0.5em;
 }
@@ -137,18 +140,18 @@ div.field span.required:after {
 
 #contentActionMenus dl.actionMenu a,
 #contentActionMenus dl.actionMenu.activated dd {
-    background-color: #75ad0a;
     color: White;
     z-index: 5;
 }
 #contentActionMenus dl.actionMenu.activated dd {
-    border-bottom: 0.5em solid #75ad0a;
-        right: -3px;
+    border-bottom: 0.5em solid transparent;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
+    right: -3px;
 }
 #contentActionMenus dl.actionMenu.activated dd a:hover,
 #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
-    background-color: White !important;
-    color: #666;
+    background-color: #e32e36 !important;
 }
 #contentActionMenus dl.actionMenu {
     line-height: 2em;
@@ -165,7 +168,6 @@ div.field span.required:after {
 
 #contentActionMenus {
     float: right;
-    background: #75ad0a;
     margin: 0;
     position: relative;
     top: -0.23em;

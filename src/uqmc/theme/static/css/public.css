@@ -20,15 +20,15 @@
 
 body {
     font: 100% Arial, FreeSans, sans-serif;
-    background: White;
-    color: Black;
+    background: #1b2624 url('/++theme++uqmc.theme/static/images/noise.png') top center repeat;
+    color: White;
     /* width: 58em; margin: 1em auto; */
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
+    font-family: MuseoSlab500Regular, "Helvetica Neue", Arial, FreeSans, sans-serif;
     font-weight: bold;
-    color: Black;
+    color: White;
     line-height: 1.5em;
 }
 h1, h2 {
@@ -63,7 +63,7 @@ p {
 }
 
 a:link, a:visited {
-    color: #205c90;
+    color: White;
 }
 a:focus img {
     outline: thin dotted;
@@ -106,6 +106,7 @@ sub {
 }
 
 #portal-logo {
+    font-family: MuseoSlab500Regular;
     display: inline-block;
     margin: 1.375em 0;
 }
@@ -124,6 +125,7 @@ sub {
 }
 
 #portal-globalnav {
+    font-family: MuseoSlab500Regular;
     clear: both;
     float: left;
     /* ensure top navigation dont touches portlets, content etc.. #10491 */
@@ -135,7 +137,7 @@ sub {
 #portal-globalnav li a {
     display: inline-block;
     padding: 12px;
-    background: rgba(0, 0, 0);
+    background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.8);
     white-space: normal;
     color: White;
@@ -152,6 +154,8 @@ sub {
 }
 
 #portal-personaltools {
+    font-family: MuseoSlab500Regular;
+    background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.8);
     padding: 0.25em 0.5em;
     display: inline-block;
@@ -179,10 +183,6 @@ sub {
 #portal-personaltools .actionMenu, #portal-personaltools .actionMenu > dt > a, #portal-personaltools dl.actionMenu > dt {
     float: none;
     display: inline !important;
-}
-
-#portal-personaltools a {
-    color: White;
 }
 
 #portal-languageselector {
@@ -357,7 +357,9 @@ dl.portletError {
 dl.portlet dt,
 div.portletAssignments div.portletHeader {
     padding: 0.42em 1em;
-    background: #ddd;
+    color: White;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
     line-height: normal;
 }
 dl.portlet dt.hiddenStructure {
@@ -403,7 +405,8 @@ a.managePortletsFallback {
     padding: 0.25em 0.5em;
     font-size: 80%;
     margin: 0 auto 1em;
-    background: #ddd;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.8);
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
@@ -509,18 +512,18 @@ dl.portlet {
 
 #content a:link,
 dl.portlet a:link {
-    color: #205c90;
+    color: White;
     border-bottom: 0.1em solid #ccc;
 }
 
 #content a:visited,
 dl.portlet a:visited {
-    color: #427597;
+    color: White;
     border-bottom: 0.1em solid #ccc;
 }
 #content a:hover,
 dl.portlet a:hover {
-    color: #75ad0a !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
+    color: White; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
 }
 #content a:target {
     background-color: #ffb;
@@ -666,8 +669,15 @@ dd.image-caption {
 /* @group Footer */
 
 #portal-footer {
-    font-size: 75%;
-    background: #ddd;
+    font-family: MuseoSlab500Regular;
+    background: #e32e36; /* Old browsers */
+    background: -moz-linear-gradient(left, #e32e36 0%, #bf1e6f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e32e36), color-stop(100%,#bf1e6f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #e32e36 0%,#bf1e6f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #e32e36 0%,#bf1e6f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #e32e36 0%,#bf1e6f 100%); /* IE10+ */
+    background: linear-gradient(to right, #e32e36 0%,#bf1e6f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e32e36', endColorstr='#bf1e6f',GradientType=1 ); /* IE6-9 */
     padding: 1em;
     margin: 1em 0;
     line-height: 2em;

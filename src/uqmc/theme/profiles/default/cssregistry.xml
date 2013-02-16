@@ -6,5 +6,6 @@
   <stylesheet id="++theme++uqmc.theme/css/public.css" />
   <stylesheet id="++theme++uqmc.theme/css/columns.css" />
   <stylesheet id="++theme++uqmc.theme/css/authoring.css" />
+  <stylesheet id="++theme++uqmc.theme/css/web_fonts.css" />
 
 </object>
