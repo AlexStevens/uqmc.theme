@@ -43,6 +43,8 @@
       name="uqmc.theme.global_sections"
       manager=".interfaces.IBetweenContent"
       class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
+      template="viewlets/modifications/sections.pt"
+      layer=".interfaces.IThemeSpecific"
       permission="zope2.View"
       />
 

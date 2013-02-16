@@ -64,11 +64,23 @@
         </div>
 
 <div id="middle-container" class="row">
-    <div id="portal-between" class="">
+    <div id="portal-between">
         <div tal:replace="structure provider:uqmc.theme.betweencontent" />
     </div>
 
-    <div id="portal-columns" class="">
+    <div id="portal-columns">
+
+        <tal:notajax tal:condition="not:ajax_load">
+        <div id="portal-column-one"
+            class="cell width-1:4 position-0"
+            metal:define-slot="column_one_slot"
+            tal:condition="sl"
+            tal:attributes="class classes/one">
+            <metal:portlets define-slot="portlets_one_slot">
+                <tal:block replace="structure provider:plone.leftcolumn" />
+            </metal:portlets>
+        </div>
+        </tal:notajax>
 
         <div id="portal-column-content" class="cell" tal:attributes="class classes/content">
 
@@ -141,16 +153,6 @@
         </div>
 
         <tal:notajax tal:condition="not:ajax_load">
-        <div id="portal-column-one"
-            class="cell width-1:4 position-0"
-            metal:define-slot="column_one_slot"
-            tal:condition="sl"
-            tal:attributes="class classes/one">
-            <metal:portlets define-slot="portlets_one_slot">
-                <tal:block replace="structure provider:plone.leftcolumn" />
-            </metal:portlets>
-        </div>
-
         <div id="portal-column-two"
             class="cell width-1:4 position-3:4"
             metal:define-slot="column_two_slot"

@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plone">
+
+  <!-- Sunburst special view -->
+  <browser:page
+      for="*"
+      name="sunburstview"
+      class=".themeview.ThemeView"
+      permission="zope.Public"
+      allowed_interface="plonetheme.sunburst.browser.interfaces.ISunburstView"
+      />
+
+</configure>

@@ -20,7 +20,7 @@
 
 body {
     font: 100% Arial, FreeSans, sans-serif;
-    background: #1b2624 url('/++theme++uqmc.theme/static/images/noise.png') top center repeat;
+    background: #1b2624 url(../images/noise.png) top center repeat;
     color: White;
     /* width: 58em; margin: 1em auto; */
 }
@@ -326,7 +326,6 @@ a.link-parent {
 
 a.link-anchor {
     border: none !important;
-    color: Black !important;
     cursor: default !important;
 }
 #content a.link-overlay {
@@ -388,7 +387,6 @@ div.portletAssignments .managedPortletActions form {
 dl.portlet dt a:link,
 dl.portlet dt a:visited,
 dl.portlet dt a:hover {
-    color: black;
     display: block;
     border: none;
 }
@@ -481,7 +479,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     line-height: 1.5em;
     clear: both;
     font-size: 80%;
-    margin: 1em 0.25em 2em 0.25em;
 }
 
 /* Special case of #content - TinyMCE */
@@ -541,7 +538,6 @@ dl.portlet a:hover {
 }
 
 #category a.link-category, span.selectedTag {
-    color: black;
     padding: 0.25em 0.5em;
     background: #ddd;
     border-radius: 0.5em;
@@ -679,7 +675,6 @@ dd.image-caption {
     background: linear-gradient(to right, #e32e36 0%,#bf1e6f 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e32e36', endColorstr='#bf1e6f',GradientType=1 ); /* IE6-9 */
     padding: 1em;
-    margin: 1em 0;
     line-height: 2em;
 }
 
