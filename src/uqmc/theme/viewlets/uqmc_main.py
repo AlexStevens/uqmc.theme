@@ -1,13 +1,25 @@
 from five import grok
 from zope.interface import Interface
 from Products.CMFCore.utils import getToolByName
+from Products.CMFCore.interfaces._content import ISiteRoot
 from plone.app.layout.viewlets.interfaces import IPortalFooter
+import random
 
 from uqmc.theme.interfaces import IThemeSpecific
 
 
 grok.templatedir('templates')
 grok.layer(IThemeSpecific)
+
+
+def get_background_properties(brain):
+    metadata = {}
+    Title = brain.Title.split('|')
+    metadata['Title'] = Title[0].strip()
+    if len(Title) > 1:
+        metadata['position'] = Title[1].strip()
+    metadata['description'] = brain.description
+    metadata['url'] = brain.getURL()
 
 
 class FooterViewlet(grok.Viewlet):
@@ -23,3 +35,23 @@ class FooterViewlet(grok.Viewlet):
 
         if len(news_items):
             return news_items[0]
+
+
+class BackgroundFooterViewlet(grok.Viewlet):
+    grok.name('uqmc.theme.background')
+    grok.context(ISiteRoot)
+    grok.viewletmanager(IPortalFooter)
+    grok.order(0)
+
+    def get_backgrounds(self):
+        catalog = getToolByName(self.context, 'portal_catalog')
+
+        path = '/'.join(self.context.getPhysicalPath()[0:1]) + '/background'
+        photos = catalog({'portal_type': 'Image', 'path': path})
+        metadata = []
+        for photo in photos:
+            meta_photo = get_background_properties(photo)
+            metadata.append(meta_photo)
+        random.shuffle(metadata)
+
+        return metadata

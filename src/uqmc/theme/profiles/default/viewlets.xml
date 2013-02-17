@@ -20,6 +20,7 @@
     <viewlet name="plone.global_sections" />
   </order>
   <order manager="plone.portalfooter" skinname="Sunburst Theme">
-    <viewlet name="uqmc.footer" insert-before="*" />
+    <viewlet name="uqmc.theme.footer" insert-before="*" />
+    <viewlet name="uqmc.theme.background" insert-before="*" />
   </order>
 </object>

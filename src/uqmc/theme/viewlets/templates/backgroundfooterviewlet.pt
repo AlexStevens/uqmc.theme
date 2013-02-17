@@ -1,0 +1,6 @@
+<div id="portal-background" tal:define="backgrounds viewlet/get_backgrounds" tal:condition="backgrounds">
+  <div id="photo-container">
+    <a tal:content="item/Title" tal:attributes="href item/url">Testing UQMC Footer</a>
+    <span tal:content="item/description"></span>
+  </div>
+</div>

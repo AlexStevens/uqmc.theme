@@ -93,3 +93,10 @@ def install(context):
         qm.setImmediatelyAddableTypes(types)
         qm.setLocallyAllowedTypes(types)
         qm.portal_workflow.doActionFor(qm, 'publish_exec')
+
+    if 'background' not in portal:
+        portal.invokeFactory(
+                'Folder',
+                'background',
+                title = 'Background Pictures'
+            )
