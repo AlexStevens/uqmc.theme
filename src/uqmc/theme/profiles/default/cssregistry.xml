@@ -4,10 +4,10 @@
   <stylesheet id="public.css" enabled="False" />
   <stylesheet id="columns.css" enabled="False" />
   <stylesheet id="authoring.css" enabled="False" />
-  <stylesheet id="++theme++uqmc.theme/css/base.css" />
-  <stylesheet id="++theme++uqmc.theme/css/public.css" />
-  <stylesheet id="++theme++uqmc.theme/css/columns.css" />
-  <stylesheet id="++theme++uqmc.theme/css/authoring.css" />
-  <stylesheet id="++theme++uqmc.theme/css/web_fonts.css" />
+  <stylesheet id="++theme++uqmc.theme/css/base.css" applyPrefix="True" />
+  <stylesheet id="++theme++uqmc.theme/css/public.css" applyPrefix="True" />
+  <stylesheet id="++theme++uqmc.theme/css/columns.css" applyPrefix="True" />
+  <stylesheet id="++theme++uqmc.theme/css/authoring.css" applyPrefix="True" />
+  <stylesheet id="++theme++uqmc.theme/css/web_fonts.css" applyPrefix="True" />
 
 </object>
