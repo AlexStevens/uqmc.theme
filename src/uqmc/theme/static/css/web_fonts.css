@@ -24,11 +24,11 @@
 
 @font-face {
     font-family: 'MuseoSlab500Regular';
-    src: url('/++theme++uqmc.theme/static/fonts/Museo_Slab_500-webfont.eot');
-    src: url('/++theme++uqmc.theme/static/fonts/Museo_Slab_500-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/++theme++uqmc.theme/static/fonts/Museo_Slab_500-webfont.woff') format('woff'),
-         url('/++theme++uqmc.theme/static/fonts/Museo_Slab_500-webfont.ttf') format('truetype'),
-         url('/++theme++uqmc.theme/static/fonts/Museo_Slab_500-webfont.svg#MuseoSlab500Regular') format('svg');
+    src: url('../fonts/Museo_Slab_500-webfont.eot');
+    src: url('../fonts/Museo_Slab_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Museo_Slab_500-webfont.woff') format('woff'),
+         url('../fonts/Museo_Slab_500-webfont.ttf') format('truetype'),
+         url('../fonts/Museo_Slab_500-webfont.svg#MuseoSlab500Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }

@@ -26,7 +26,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: MuseoSlab500Regular, "Helvetica Neue", Arial, FreeSans, sans-serif;
+    font-family: MuseoSlab500Regular;
     font-weight: bold;
     color: White;
     line-height: 1.5em;
@@ -51,9 +51,6 @@ h5 {
 }
 h6 {
     font-size: 0.8em;
-}
-h2, h3, h4, h5, h6 {
-    color: #444;
 }
 h2 a, h3 a, h4 a {
     border-bottom: none !important;
@@ -107,7 +104,7 @@ sub {
 
 #portal-logo {
     font-family: MuseoSlab500Regular;
-    font-weight: bold;
+    letter-spacing: -0.5em;
     display: inline-block;
     margin: 1.375em 0;
     margin-left: 3.5em;
@@ -138,6 +135,7 @@ sub {
 }
 #portal-globalnav li a {
     display: inline-block;
+    letter-spacing: -0.05em;
     font-size: 26px;
     padding: 12px;
     background: rgb(0, 0, 0);
@@ -166,6 +164,7 @@ sub {
 }
 
 #portal-personaltools a {
+    letter-spacing: -0.05em;
     font-size: 20px;
     text-decoration: underline;
 }
@@ -179,10 +178,10 @@ sub {
 }
 
 #portal-personaltools > *:after {
-    color: White;
+    color: #bac9c9;
     content: "|";
     position: relative;
-    top: -0.1em;
+    top: -0.05em;
 }
 #portal-personaltools > *:last-child:after, #personaltools-home:after {
     color: transparent;
