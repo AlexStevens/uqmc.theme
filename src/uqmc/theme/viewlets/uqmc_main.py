@@ -15,11 +15,16 @@ grok.layer(IThemeSpecific)
 def get_background_properties(brain):
     metadata = {}
     Title = brain.Title.split('|')
-    metadata['Title'] = Title[0].strip()
     if len(Title) > 1:
+        metadata['Title'] = Title[0].strip()
         metadata['position'] = Title[1].strip()
-    metadata['description'] = brain.description
+    else:
+        metadata['Title'] = Title
+        metadata['position'] = 'center'
+
+    metadata['description'] = brain.Description
     metadata['url'] = brain.getURL()
+    return metadata
 
 
 class FooterViewlet(grok.Viewlet):
@@ -46,8 +51,8 @@ class BackgroundFooterViewlet(grok.Viewlet):
     def get_backgrounds(self):
         catalog = getToolByName(self.context, 'portal_catalog')
 
-        path = '/'.join(self.context.getPhysicalPath()[0:1]) + '/background'
-        photos = catalog({'portal_type': 'Image', 'path': path})
+        path = '/'.join(self.context.getPhysicalPath()) + '/background'
+        photos = catalog({'portal_type': 'Image', 'query': path})
         metadata = []
         for photo in photos:
             meta_photo = get_background_properties(photo)
