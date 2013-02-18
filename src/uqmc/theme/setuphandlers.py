@@ -12,7 +12,7 @@ def install(context):
         portal.invokeFactory(
                 'Document',
                 'landing',
-                title = ' '
+                title = 'Home'
             )
         landing = portal['landing']
         landing.portal_workflow.doActionFor(landing, 'publish')

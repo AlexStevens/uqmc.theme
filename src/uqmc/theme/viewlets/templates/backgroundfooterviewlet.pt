@@ -1,7 +1,7 @@
 <div id="portal-background" tal:define="backgrounds viewlet/get_backgrounds" tal:condition="backgrounds">
   <div id="photo-container">
     <tal:dup repeat="background backgrounds">
-        <a tal:content="background/Title" tal:attributes="href background/url">Testing UQMC Footer</a>
+        <a tal:content="background/Title" tal:attributes="href string:${background/url}/image">Testing UQMC Footer</a>
         <span tal:content="background/description"></span>
     </tal:dup>
   </div>

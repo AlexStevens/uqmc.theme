@@ -17,6 +17,13 @@
 
 
 /* @group Basics */
+.section-landing h1.documentFirstHeading {
+    display: none;
+}
+
+#photo-container a {
+    display: none;
+}
 
 body {
     font: 100% Arial, FreeSans, sans-serif;
