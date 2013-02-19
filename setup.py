@@ -30,6 +30,7 @@ setup(name='uqmc.theme',
       install_requires=[
             'setuptools',
             'plone.app.theming',
+            'plone.app.event',
             'plone.app.jquery',
             'five.grok',
         ],
