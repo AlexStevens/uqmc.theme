@@ -15,12 +15,9 @@
   </hidden>
   <order manager="plone.portalheader" skinname="Sunburst Theme">
     <viewlet name="uqmc.theme.personal_bar" insert-before="plone.personal_bar" />
+    <viewlet name="uqmc.theme.metadata" insert-before="*" />
   </order>
   <order manager="plone.abovecontent" skinname="Sunburst Theme">
     <viewlet name="plone.global_sections" />
-  </order>
-  <order manager="plone.portalfooter" skinname="Sunburst Theme">
-    <viewlet name="uqmc.theme.footer" insert-before="*" />
-    <viewlet name="uqmc.theme.background" insert-before="*" />
   </order>
 </object>
