@@ -1,7 +1,13 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts">
   <javascript
-      id="++theme++javascript/uqmc_main.js"
+      id="++theme++uqmc.theme/javascript/uqmc_main.js"
+      />
+  <javascript
+      id="++theme++uqmc.theme/javascript/bootstrap-carousel.js"
+      />
+  <javascript
+      id="++theme++uqmc.theme/javascript/bootstrap-transition.js"
       />
 
 </object>

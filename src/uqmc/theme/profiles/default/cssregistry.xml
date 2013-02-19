@@ -9,5 +9,6 @@
   <stylesheet id="++theme++uqmc.theme/css/columns.css" applyPrefix="True" />
   <stylesheet id="++theme++uqmc.theme/css/authoring.css" applyPrefix="True" />
   <stylesheet id="++theme++uqmc.theme/css/web_fonts.css" applyPrefix="True" />
+  <stylesheet id="++theme++uqmc.theme/css/carousel.css" applyPrefix="True" />
 
 </object>

@@ -1,8 +1,17 @@
 <div id="portal-background" tal:define="backgrounds viewlet/get_backgrounds" tal:condition="backgrounds">
-  <div id="photo-container">
+  <div id="background-carousel" class="carousel slide carousel-fade">
     <tal:dup repeat="background backgrounds">
-        <a tal:content="background/Title" tal:attributes="href string:${background/url}/image">Testing UQMC Footer</a>
-        <span tal:content="background/description"></span>
+      <div class="item">
+        <img tal:attributes="src string:${background/url}/image; class background/position" />
+        <div id="description">
+          <span class="title" tal:content="background/Title">Johnny on 24</span><span class="location" tal:content="background/description">Blackheath</span>
+        </div>
+      </div>
     </tal:dup>
   </div>
+  <script type="text/javascript">
+        $( function() {
+            $('#background-carousel').carousel({interval: 9000});
+        });
+  </script>
 </div>
