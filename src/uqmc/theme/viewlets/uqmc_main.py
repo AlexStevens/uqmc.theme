@@ -2,9 +2,10 @@ from five import grok
 from zope.interface import Interface
 from Products.CMFCore.utils import getToolByName
 from plone.app.layout.viewlets.interfaces import IPortalFooter
+from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot
 import random
 
-from uqmc.theme.interfaces import IThemeSpecific
+from uqmc.theme.interfaces import IThemeSpecific, IBackgroundMarker
 
 
 grok.templatedir('templates')
@@ -14,6 +15,7 @@ grok.layer(IThemeSpecific)
 def get_background_properties(brain):
     metadata = {}
     Title = brain.Title.split('|')
+    
     if len(Title) > 1:
         metadata['Title'] = Title[0].strip()
         metadata['position'] = Title[1].strip().lower()
@@ -23,6 +25,7 @@ def get_background_properties(brain):
 
     metadata['description'] = brain.Description
     metadata['url'] = brain.getURL()
+
     return metadata
 
 

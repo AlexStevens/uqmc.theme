@@ -1,3 +1,7 @@
+from zope.interface import alsoProvides
+
+from uqmc.theme.interfaces import IBackgroundMarker
+
 def install(context):
     if context.readDataFile('uqmc.theme.marker.txt') is None:
         return
@@ -12,10 +16,12 @@ def install(context):
         portal.invokeFactory(
                 'Document',
                 'landing',
-                title = 'Home'
+                title = ' '
             )
         landing = portal['landing']
         landing.portal_workflow.doActionFor(landing, 'publish')
+        alsoProvides(portal, IBackgroundMarker)
+        alsoProvides(landing, IBackgroundMarker)
         portal.setDefaultPage('landing')
 
     if 'about' not in portal:
