@@ -104,9 +104,13 @@ sub {
 
 /* @group Navigation/search */
 
-#portal-header {
+#portal-header, #portal-between, #portal-columns {
     position: relative;
-    z-index: 2;
+    z-index: 4;
+}
+
+#portal-footer {
+    z-index: 3;
 }
 
 #portal-logo {
@@ -721,6 +725,15 @@ dd.image-caption {
     font-family: MuseoSlab500Regular;
     line-height: 1em;
     color: White;
+}
+
+#portal-background #background-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10000;
 }
 
 #portal-footer-wrapper a {
