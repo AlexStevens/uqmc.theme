@@ -125,6 +125,7 @@ sub {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 /* removes extra space above logo in IE6 and IE7 */
 /* .ie6 and .ie7 is set on <html> by Modernizr library */
 .ie6 #portal-logo,
@@ -375,8 +376,9 @@ dl dt span.summary a {
 /* @group Portlets */
 
 dl.portlet {
+    background-color: rgba(255,255,255,0.05);
     margin: 0 0 1em;
-    font-size: 80%;
+    font-size: 90%;
 }
 dl.portletError {
     background-color: #FFA500;
@@ -390,6 +392,11 @@ div.portletAssignments div.portletHeader {
     background: rgba(0, 0, 0, 0.8);
     line-height: normal;
 }
+
+dl.portlet dt.portletHeader.titleless {
+    display: none;
+}
+
 dl.portlet dt.hiddenStructure {
     padding: 0;
 }
@@ -423,14 +430,20 @@ dl.portlet dt a:hover {
 dl.portlet dd.portletItem,
 dl.portlet dd.portletFooter,
 dl.portletError dd {
-    padding: 1em;
+    padding: 24px;
+}
+
+#portal-columns:last-child dl.portlet dd.portletItem,
+#portal-columns:last-child dl.portlet dd.portletFooter,
+#portal-columns:last-child dl.portletError dd {
+    padding-right: 0;
 }
 
 div.managePortletsLink,
 a.managePortletsFallback {
     text-align: center;
     padding: 0.25em 0.5em;
-    font-size: 80%;
+    font-size: 90%;
     margin: 0 auto 1em;
     background: rgb(0,0,0);
     background: rgba(0,0,0,0.8);
@@ -503,6 +516,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 
 /* @group Content Area */
+
+#middle-container {
+    margin-bottom: 3em;
+}
 
 #content {
     line-height: 1.5em;
@@ -694,15 +711,23 @@ dd.image-caption {
 
 /* @group Footer */
 
-#portal-footer {
+#portal-footer-wrapper {
     position: fixed;
     bottom: 0;
+}
+
+#portal-footer {
     font-size: 30px;
     font-family: MuseoSlab500Regular;
     line-height: 1em;
+    color: White;
 }
 
-#portal-footer a {
+#portal-background {
+    z-index: 0;
+}
+
+#portal-footer-wrapper a {
     color: White;
     letter-spacing: -0.05em;
     text-decoration: underline;
