@@ -1,4 +1,0 @@
-<div id="metadata" style="display: none;" tal:define="portal viewlet/getRoot">
-    <h1 tal:content="portal/Title">UQ Mountain Club</h1>
-    <p tal:content="portal/Description">For lovers of Rock Climbing, Hiking and the Great Outdoors, the Brisbane based University of Queensland Mountain Club is the club for you.</p>
-</div>

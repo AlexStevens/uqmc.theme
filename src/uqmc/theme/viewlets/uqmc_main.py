@@ -1,7 +1,7 @@
 from five import grok
 from zope.interface import Interface
 from Products.CMFCore.utils import getToolByName
-from plone.app.layout.viewlets.interfaces import IPortalFooter, IPortalHeader
+from plone.app.layout.viewlets.interfaces import IPortalFooter
 import random
 
 from uqmc.theme.interfaces import IThemeSpecific, IBackgroundMarker
@@ -32,7 +32,7 @@ class FooterViewlet(grok.Viewlet):
     grok.name('uqmc.theme.footer')
     grok.context(Interface)
     grok.viewletmanager(IPortalFooter)
-    grok.order(2)
+    grok.order(1)
 
     def get_newest_newsitem(self):
         catalog = getToolByName(self.context, 'portal_catalog')
@@ -47,7 +47,7 @@ class BackgroundFooterViewlet(grok.Viewlet):
     grok.name('uqmc.theme.background')
     grok.context(IBackgroundMarker)
     grok.viewletmanager(IPortalFooter)
-    grok.order(1)
+    grok.order(0)
 
     def get_backgrounds(self):
         metadata = []
@@ -64,13 +64,3 @@ class BackgroundFooterViewlet(grok.Viewlet):
         random.shuffle(metadata)
 
         return metadata
-
-
-class MetadataViewlet(grok.Viewlet):
-    grok.name('uqmc.theme.metadata')
-    grok.context(Interface)
-    grok.viewletmanager(IPortalHeader)
-    grok.order(0)
-
-    def getRoot(self):
-        return getToolByName(self.context, 'portal_url')

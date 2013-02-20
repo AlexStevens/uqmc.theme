@@ -28,13 +28,13 @@
 body {
     font: 100% Arial, FreeSans, sans-serif;
     background: #1b2624 url(../images/noise.png) top center repeat;
-    color: White;
+    color: #bac9c9;
     /* width: 58em; margin: 1em auto; */
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: MuseoSlab500Regular;
-    font-weight: bold;
+    font-weight: normal;
     color: White;
     line-height: 1.5em;
 }
@@ -42,7 +42,7 @@ h1, h2 {
     letter-spacing: -0.05em;
 }
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 h2 {
     font-size: 1.75em;
@@ -67,7 +67,7 @@ p {
 }
 
 a:link, a:visited {
-    color: White;
+    color: #bac9c9;
 }
 a:focus img {
     outline: thin dotted;
@@ -111,14 +111,15 @@ sub {
 
 #portal-logo {
     font-family: MuseoSlab500Regular;
-    letter-spacing: -0.5em;
+    margin-top: 5px;
+    letter-spacing: -0.75em;
     display: inline-block;
-    margin: 1.375em 0;
-    margin-left: 3.5em;
+    margin-left: 3.7em;
     min-width: 1200px;
 }
 #portal-logo a {
-    font-size: 128px;
+    font-size: 139px;
+    line-height: 1.05em;
     color: #ee2f24;
     background: -webkit-linear-gradient(left, #ee2f24, #bf1e6f);
     -webkit-background-clip: text;
@@ -135,8 +136,6 @@ sub {
     font-family: MuseoSlab500Regular;
     clear: both;
     float: left;
-    /* ensure top navigation dont touches portlets, content etc.. #10491 */
-    margin: 0 0 24px 0;
 }
 #portal-globalnav li {
     display: block;
@@ -144,8 +143,8 @@ sub {
 #portal-globalnav li a {
     display: inline-block;
     letter-spacing: -0.05em;
-    font-size: 26px;
-    padding: 12px;
+    font-size: 29px;
+    padding: 8px 12px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.8);
     white-space: normal;
@@ -166,15 +165,21 @@ sub {
     font-family: MuseoSlab500Regular;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.8);
-    padding: 0.25em 1.5em;
+    padding: 0.15em 0.55em 0.30em 0.55em;
     display: inline-block;
-    line-height: 3em;
+    line-height: 2.55em;
 }
 
 #portal-personaltools a {
     letter-spacing: -0.05em;
-    font-size: 20px;
+    color: White;
+    margin: 0 0.2em;
+    font-size: 18px;
     text-decoration: underline;
+}
+
+#portal-personaltools dl.actionMenu.deactivated dt {
+    margin: 0;
 }
 
 #personaltools-home a {
@@ -502,7 +507,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #content {
     line-height: 1.5em;
     clear: both;
-    font-size: 80%;
+    font-size: 90%;
 }
 
 /* Special case of #content - TinyMCE */
@@ -516,7 +521,7 @@ body#content {
 }
 
 #content h1.documentFirstHeading {
-    margin-top: 0;
+    margin-top: 13px;
 }
 
 #content p,
@@ -534,18 +539,18 @@ dl.portlet {
 
 #content a:link,
 dl.portlet a:link {
-    color: White;
+    color: #4ba5dc;
     border-bottom: 0.1em solid #ccc;
 }
 
 #content a:visited,
 dl.portlet a:visited {
-    color: White;
+    color: #4ba5dc;
     border-bottom: 0.1em solid #ccc;
 }
 #content a:hover,
 dl.portlet a:hover {
-    color: White; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
+    color: #4ba5dc; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
 }
 #content a:target {
     background-color: #ffb;
@@ -571,7 +576,7 @@ dl.portlet a:hover {
 }
 #category a.link-category:hover {
     background: #205c90;
-    color: White;
+    color: #bac9c9;
     border-color: #205c90;
 }
 #category .separator {
@@ -589,7 +594,7 @@ dl.portlet a:hover {
 
 #content pre {
     background-color: #222;
-    color: White;
+    color: #bac9c9;
     font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
     padding: 1em;
     overflow-x: auto;
@@ -598,7 +603,7 @@ dl.portlet a:hover {
     line-height: 1.25em;
 }
 #content pre.python {
-    background-color: White;
+    background-color: #bac9c9;
 }
 
 #content code {
@@ -626,7 +631,7 @@ dl.portlet a:hover {
     padding: 0.5em;
     background-color: #666;
     background-color: rgba(40,40,40,0.7);
-    color: White;
+    color: #bac9c9;
     font-weight: bold;
     position: relative;
     width: 190px;
@@ -690,12 +695,16 @@ dd.image-caption {
 /* @group Footer */
 
 #portal-footer {
+    position: fixed;
+    bottom: 0;
     font-size: 30px;
     font-family: MuseoSlab500Regular;
     line-height: 1em;
 }
 
 #portal-footer a {
+    color: White;
+    letter-spacing: -0.05em;
     text-decoration: underline;
 }
 

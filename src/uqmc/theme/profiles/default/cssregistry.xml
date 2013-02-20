@@ -4,11 +4,13 @@
   <stylesheet id="public.css" enabled="False" />
   <stylesheet id="columns.css" enabled="False" />
   <stylesheet id="authoring.css" enabled="False" />
+  <stylesheet id="++resource++plone.app.event/event.css" enabled="False" />
   <stylesheet id="++theme++uqmc.theme/css/base.css" applyPrefix="True" />
   <stylesheet id="++theme++uqmc.theme/css/public.css" applyPrefix="True" />
   <stylesheet id="++theme++uqmc.theme/css/columns.css" applyPrefix="True" />
   <stylesheet id="++theme++uqmc.theme/css/authoring.css" applyPrefix="True" />
   <stylesheet id="++theme++uqmc.theme/css/web_fonts.css" applyPrefix="True" />
   <stylesheet id="++theme++uqmc.theme/css/carousel.css" applyPrefix="True" />
+  <stylesheet id="++theme++uqmc.theme/css/event.css" applyPrefix="True" />
 
 </object>
