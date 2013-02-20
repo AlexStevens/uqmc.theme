@@ -115,7 +115,7 @@ sub {
     letter-spacing: -0.75em;
     display: inline-block;
     margin-left: 3.7em;
-    min-width: 1200px;
+    min-width: 1100px;
 }
 #portal-logo a {
     font-size: 139px;
@@ -721,10 +721,6 @@ dd.image-caption {
     font-family: MuseoSlab500Regular;
     line-height: 1em;
     color: White;
-}
-
-#portal-background {
-    z-index: 0;
 }
 
 #portal-footer-wrapper a {
