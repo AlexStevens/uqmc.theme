@@ -85,8 +85,8 @@
 
     <object name="executive" meta_type="CMF Action" i18n:domain="plone" insert-before="logout">
      <property name="title" i18n:translate="">Execs</property>
-     <property name="description" i18n:translate="">Executive of UQ Mountain Club</property>
-     <property name="url_expr">string:${globals_view/navigationRootUrl}/executive</property>
+     <property name="description" i18n:translate="">Executives of UQ Mountain Club</property>
+     <property name="url_expr">string:${globals_view/navigationRootUrl}/executives</property>
      <property name="icon_expr"></property>
      <property name="available_expr"></property>
      <property name="permissions"></property>
