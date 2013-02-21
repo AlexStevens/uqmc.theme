@@ -117,6 +117,7 @@ body.portaltype-plone-site #portal-columns {
 body.portaltype-plone-site #portal-column-content {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.6);
+    padding-bottom: 24px;
 }
 
 body.portaltype-plone-site #middle-container {
