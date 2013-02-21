@@ -3,7 +3,7 @@
     <div class="carousel-inner">
       <tal:dup repeat="background backgrounds">
         <div tal:define="index repeat/background/index" tal:attributes="class python:(not index and 'active ' or '') + 'item'">
-          <div id="background-img" tal:attributes="style string:background: url('${background/url}/image') no-repeat ${background/position};"></div>
+          <div id="background-img" tal:attributes="style string:background: url('${background/url}/image') no-repeat ${background/position};; background-size: 100% auto;"></div>
           <div id="description">
             <span class="title" tal:content="background/Title">Johnny on 24</span><span class="location" tal:content="background/description">Blackheath</span>
           </div>

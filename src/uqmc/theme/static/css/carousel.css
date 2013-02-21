@@ -78,7 +78,7 @@
 .carousel.carousel-fade .active.left,
 .carousel.carousel-fade .active.right {
     left: 0;
-    z-index: 2;
+    z-index: -10000;
     opacity: 0;
     filter: alpha(opacity=0);
 }
@@ -86,8 +86,5 @@
 .carousel.carousel-fade .next,
 .carousel.carousel-fade .prev {
     left: 0;
-    z-index: 1;
-}
-.carousel.carousel-fade .carousel-control {
-    z-index: 3;
+    z-index: -10001;
 }

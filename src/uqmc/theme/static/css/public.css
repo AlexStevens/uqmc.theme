@@ -109,10 +109,6 @@ sub {
     z-index: 4;
 }
 
-#portal-footer {
-    z-index: 3;
-}
-
 #portal-logo {
     font-family: MuseoSlab500Regular;
     margin-top: 5px;
