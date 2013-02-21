@@ -36,8 +36,6 @@
 .event_listing nav {
     border: 0.3em solid #DDDDDD;
     border-bottom:none;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
 }
 .event_listing ul.mode_selector {
     display: block;
@@ -48,8 +46,6 @@
     display: block;
     margin-left: 0;
     float:right;
-    border-bottom-left-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
 }
 #content .event_listing nav ul li a {
     border:none;
@@ -58,8 +54,6 @@
 .event_listing ul.mode_selector li:hover,
 .event_listing ul.mode_selector li.selected {
     background: white;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
     color: Black;
 }
 .event_listing ul.mode_selector li.selected {
@@ -67,9 +61,8 @@
 }
 
 .event_listing article {
-    background-color: #EAEAEA;
+    background-color: rgba(255,255,255,0.6);
     color: Black;
-    border-radius: 1em 1em 1em 1em;
     margin-top: 1em;
     padding: 1em;
 }
@@ -81,8 +74,6 @@
     padding:0.7em 0.7em 0.5em;
     background-color:white;
     border:none;
-    border-radius:0.5em;
-    box-shadow: 0.5em 0.5em 0.4em black;
     min-width:4.4em;
 }
 .event_listing span.cal_wkday {
@@ -118,8 +109,6 @@
     display:none;
     background-color:white;
     border:1px solid black;
-    border-radius:0.3em;
-    box-shadow: 0.1em 0.1em 0.1em black;
     font-size:80%;
     padding:10px;
     margin:10px;

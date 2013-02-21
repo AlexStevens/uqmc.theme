@@ -37,12 +37,6 @@
     display: block;
     border-style: solid solid none solid;
     margin-left: 0;
-    border-top-right-radius: 0.5em;
-    border-top-left-radius: 0.5em;
-    -webkit-border-top-right-radius: 0.5em;
-    -webkit-border-top-left-radius: 0.5em;
-    -moz-border-radius-topleft: 0.5em;
-    -moz-border-radius-topright: 0.5em;
 }
 #content li.formTab,
 #content-core li.formTab {
@@ -77,12 +71,6 @@
 #content-core li.formTab a:hover {
     background: #ee2f24;
     color: White;
-    border-top-right-radius: 0.5em;
-    border-top-left-radius: 0.5em;
-    -webkit-border-top-right-radius: 0.5em;
-    -webkit-border-top-left-radius: 0.5em;
-    -moz-border-radius-topleft: 0.5em;
-    -moz-border-radius-topright: 0.5em;
 }
 #content li.formTab a.notify,
 #content-core li.formTab a.notify {
@@ -173,12 +161,6 @@ div.field span.required:after {
     top: -0.23em;
     right:-0.24em;
     padding: 0.1em 0.24em 0 0;
-    border-radius: 0.5em;
-    border-top-left-radius: 0;
-    -webkit-border-radius: 0.5em;
-    -webkit-border-top-left-radius: 0;
-    -moz-border-radius: 0.5em;
-    -moz-border-radius-topleft: 0;
 }
 
 .actionMenuContent {
@@ -212,12 +194,6 @@ dl.actionMenu.activated dd {
     position: absolute;
     width: auto;
     min-width: 100%;
-    border-bottom-right-radius: 0.5em;
-    border-bottom-left-radius: 0.5em;
-    -webkit-border-bottom-right-radius: 0.5em;
-    -webkit-border-bottom-left-radius: 0.5em;
-    -moz-border-radius-bottomleft: 0.5em;
-    -moz-border-radius-bottomright: 0.5em;
 }
 dl.actionMenu.activated dt a,
 dl.actionMenu.activated dd a,

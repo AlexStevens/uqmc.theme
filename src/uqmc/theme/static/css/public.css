@@ -42,7 +42,7 @@ h1, h2 {
     letter-spacing: -0.05em;
 }
 h1 {
-    font-size: 2.5em;
+    font-size: 2.25em;
 }
 h2 {
     font-size: 1.75em;
@@ -113,21 +113,6 @@ sub {
     z-index: 4;
 }
 
-body.portaltype-plone-site #portal-columns {
-    position: relative;
-    z-index: 3;
-}
-
-body.portaltype-plone-site #portal-column-content {
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.6);
-    padding-bottom: 24px;
-}
-
-body.portaltype-plone-site #middle-container {
-    margin-bottom: 8em;
-}
-
 #portal-logo {
     font-family: MuseoSlab500Regular;
     margin-top: 5px;
@@ -140,9 +125,6 @@ body.portaltype-plone-site #middle-container {
     font-size: 139px;
     line-height: 1.05em;
     color: #ee2f24;
-    background: -webkit-linear-gradient(left, #ee2f24, #bf1e6f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 /* removes extra space above logo in IE6 and IE7 */
@@ -158,6 +140,7 @@ body.portaltype-plone-site #middle-container {
     float: left;
 }
 #portal-globalnav li {
+    white-space: nowrap;
     display: block;
 }
 #portal-globalnav li a {
@@ -243,12 +226,6 @@ body.portaltype-plone-site #middle-container {
     z-index: 3; /* portal-header has 2 and we need to be above to be clickable */
     padding: 0.25em 0.5em;
     font-size: 80%;
-    border-bottom-right-radius: 0.5em;
-    border-bottom-left-radius: 0.5em;
-    -webkit-border-bottom-right-radius: 0.5em;
-    -webkit-border-bottom-left-radius: 0.5em;
-    -moz-border-radius-bottomleft: 0.5em;
-    -moz-border-radius-bottomright: 0.5em;
     max-width: 50%;
 }
 
@@ -466,9 +443,6 @@ a.managePortletsFallback {
     margin: 0 auto 1em;
     background: rgb(0,0,0);
     background: rgba(0,0,0,0.8);
-    border-radius: 0.5em;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
 }
 a.managePortletsFallback {
     display:inline-block; /* in order for our vertical margins to work on inline element */
@@ -543,7 +517,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #content {
     line-height: 1.5em;
     clear: both;
-    font-size: 90%;
 }
 
 /* Special case of #content - TinyMCE */
@@ -606,9 +579,6 @@ dl.portlet a:hover {
 #category a.link-category, span.selectedTag {
     padding: 0.25em 0.5em;
     background: #ddd;
-    border-radius: 0.5em;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
 }
 #category a.link-category:hover {
     background: #205c90;
@@ -736,6 +706,7 @@ dd.image-caption {
 }
 
 #portal-footer {
+    white-space: nowrap;
     width: 100%;
 }
 

@@ -20,7 +20,6 @@ def install(context):
             )
         landing = portal['landing']
         landing.portal_workflow.doActionFor(landing, 'publish')
-        alsoProvides(portal, IBackgroundMarker)
         alsoProvides(landing, IBackgroundMarker)
         portal.setDefaultPage('landing')
 

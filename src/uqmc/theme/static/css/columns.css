@@ -41,7 +41,7 @@ div.cell {
     padding-left: 24px;
     padding-right: 24px;
 }
-#portal-columns:last-child > div > div {
+#portal-column-two > div {
     padding-right: 0;
 }
 .template-manage-portlets #portal-columns:last-child > div > div {

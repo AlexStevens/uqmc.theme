@@ -109,24 +109,20 @@ table.listing th.listingCheckbox {
 }
 
 table.listing {
-    border-left: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border:none;
 }
 table.listing .top {
-    border-left: 1px solid #ddd;
-    border-top: 1px solid #ddd;
-    border-right: 1px solid #ddd;
+    border:none;
 }
 table.listing th {
     text-align: left;
     color: #666;
-    border: 0.1em solid #e7e7e7;
-    border-style: solid solid none;
+    border: none;
     background: #ddd;
+    background: rgba(0,0,0,0.3);
 }
 table.listing tr.odd th {
-    border: 0.1em solid #fff;
-    border-style: solid solid none none;
+    border:none;
 }
 table.listing tbody th {
     font-weight: bold;
@@ -134,17 +130,19 @@ table.listing tbody th {
 table.listing tbody tr {
     text-align:left;
 }
-table.listing tbody tr.odd {
+table.listing tbody tr.even {
     background: #eee;
+    background: rgba(0,0,0,0.1)
 }
 table.listing tbody tr td {
     background: transparent;
 }
-table.listing tbody tr.odd td {
+table.listing tbody tr.odd even {
     background: #eee;
+    background: rgba(0,0,0,0.1)
 }
 table.listing td {
-    border-right: 1px solid #ddd;
+    border:none;
 }
 .icons-on table.listing td {
     line-height: 2em;
@@ -157,8 +155,7 @@ table.listing a {
 
 table.listing td.draggable {
     text-shadow: White 1px 1px 1px;
-    background: #ddd !important;
-    border-bottom: 1px solid white;
+    border:none;
     padding: 0.4em 0.4em 0 0.5em;
 }
 /* Vertical table data listings */
@@ -168,13 +165,13 @@ table.vertical th {
     text-align: right;
 }
 table.vertical td {
-    border-top: 0.1em solid #e7e7e7;
+    border:none;
     padding: 0.5em;
 }
 /* Grid table listings */
 table.grid td,
 table.grid th {
-    border: 1px solid #e7e7e7;
+    border:none;
     padding: 0.5em;
 }
 
@@ -441,12 +438,6 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
 .commentBody {
     padding: 1em;
     margin: 0.5em 0;
-    border-radius: 0.5em;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-    box-shadow: 0 0 1em 0 #888;
-    -moz-box-shadow: 0 0 0.5em 0 #888;
-    -webkit-box-shadow: 0 0 0.5em #888;
 }
 
 .comment h1,
@@ -817,9 +808,6 @@ div.overlay div.close {
     background-color: rgba(0,0,0,0.8);
     border: 1px solid #999;
     white-space: normal;
-    box-shadow: 0 0 3em 0.5em #666;
-    -moz-box-shadow: 0 0 3em 0.5em #666;
-    -webkit-box-shadow: 0 0 3em #666;
 }
 
 .pb-ajax > div {
@@ -911,12 +899,6 @@ div.historyTools form {
 .historyByLine {
     background: #ddd;
     padding: 0.5em;
-    border-top-right-radius: 0.5em;
-    border-top-left-radius: 0.5em;
-    -webkit-border-top-right-radius: 0.5em;
-    -webkit-border-top-left-radius: 0.5em;
-    -moz-border-radius-topleft: 0.5em;
-    -moz-border-radius-topright: 0.5em;
 }
 
 div.historyLinks {

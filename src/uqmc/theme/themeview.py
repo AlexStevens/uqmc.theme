@@ -32,7 +32,7 @@ class ThemeView(BrowserView):
 
         if not sl and not sr:
             # we don't have columns, thus conten takes the whole width
-            columns['content'] = "width-5:6"
+            columns['content'] = "width-3:6"
 
         elif sl and sr:
             # In case we have both columns, content takes 50% of the whole
@@ -54,12 +54,12 @@ class ThemeView(BrowserView):
         elif (sl and not sr) and isRTL:
             # We have left column and we are in RTL language
             columns['one'] = "width-1:6"
-            columns['content'] = "width-4:6"
+            columns['content'] = "width-3:6"
 
         elif (sl and not sr) and not isRTL:
             # We have left column and we are in NOT RTL language
             columns['one'] = "width-1:6"
-            columns['content'] = "width-4:6"
+            columns['content'] = "width-3:6"
 
         # append cell to each css-string
         for key, value in columns.items():
