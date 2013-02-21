@@ -104,9 +104,14 @@ sub {
 
 /* @group Navigation/search */
 
-#portal-header, #portal-between, #portal-columns {
+#portal-header, #portal-between {
     position: relative;
     z-index: 4;
+}
+
+#portal-columns {
+    position: relative;
+    z-index: 3;
 }
 
 #portal-logo {
