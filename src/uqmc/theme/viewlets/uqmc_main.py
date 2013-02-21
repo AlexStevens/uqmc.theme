@@ -20,7 +20,10 @@ def get_background_properties(brain):
         metadata['position'] = Title[1].strip().lower()
     else:
         metadata['Title'] = Title
-        metadata['position'] = 'center'
+        metadata['position'] = 'center center'
+
+    image = brain.getObject()
+    metadata['ratio'] = str(float(image.getWidth())/float(image.getHeight()))
 
     metadata['description'] = brain.Description
     metadata['url'] = brain.getURL()

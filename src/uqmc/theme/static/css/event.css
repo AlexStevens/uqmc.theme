@@ -68,6 +68,7 @@
 
 .event_listing article {
     background-color: #EAEAEA;
+    color: Black;
     border-radius: 1em 1em 1em 1em;
     margin-top: 1em;
     padding: 1em;
@@ -122,6 +123,7 @@
     font-size:80%;
     padding:10px;
     margin:10px;
+    z-index: 30;
 }
 .pae_calendar_tooltip a {
     color:black;
@@ -141,7 +143,7 @@
 }
 
 .portletCalendar dt {
-    background-color: #eee;
+    background-color: rgba(255,255,255,0.4);
     font-weight: bold;
     text-align: center;
     line-height: 1.6em;
@@ -178,7 +180,7 @@
 }
 
 .ploneCalendar .weekdays th {
-    background-color: #eee;
+    background-color: rgba(255,255,255,0.4);
     text-align: center;
     padding: 2px;
     font-weight: normal;
@@ -189,11 +191,10 @@
     width: 14%;
     text-align: center;
     padding: 2px;
-    border: 2px solid #eee;
-    background-color: #eee;
 }
 .ploneCalendar td.cal_has_events { font-weight: bold; }
 .ploneCalendar td.today {
+    color: Black;
     background-color: white;
     border-color: #205C90;
 }

@@ -88,3 +88,9 @@
     left: 0;
     z-index: -10001;
 }
+
+.carousel.carousel-fade .carousel-inner .item #description {
+    padding: 24px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.8);
+}

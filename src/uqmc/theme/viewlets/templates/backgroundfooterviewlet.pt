@@ -3,7 +3,7 @@
     <div class="carousel-inner">
       <tal:dup repeat="background backgrounds">
         <div tal:define="index repeat/background/index" tal:attributes="class python:(not index and 'active ' or '') + 'item'">
-          <div id="background-img" tal:attributes="style string:background: url('${background/url}/image') no-repeat ${background/position};; background-size: 100% auto;"></div>
+          <div id="background-img" tal:attributes="style string:background: url('${background/url}/image') no-repeat ${background/position}; class background/ratio"></div>
           <div id="description">
             <span class="title" tal:content="background/Title">Johnny on 24</span><span class="location" tal:content="background/description">Blackheath</span>
           </div>
@@ -11,7 +11,23 @@
       </tal:dup>
     </div>
     <script type="text/javascript">
+          function background_size() {
+              $('.carousel-inner #background-img').each(function() {
+                  var image_ratio = parseFloat($(this).attr('class'));
+                  var window_ratio = $(window).width() / $(window).height();
+                  if (image_ratio >  window_ratio) {
+                      $(this).css({'background-size':'auto 100%'});
+                  } else {
+                      $(this).css({'background-size':'100% auto'});
+                  }
+              });
+          }
+          
           $( function() {
+              background_size();
+              $(window).resize(function() {
+                  background_size();
+              });
               $('#background-carousel').carousel({interval: 9000, pause: false});
           });
     </script>
