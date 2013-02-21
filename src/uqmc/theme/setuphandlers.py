@@ -98,6 +98,7 @@ def install(context):
         qm.setConstrainTypesMode(1)
         qm.setImmediatelyAddableTypes(types)
         qm.setLocallyAllowedTypes(types)
+        qm.setExcludeFromNav(True)
 
     if 'background' not in portal:
         portal.invokeFactory(
@@ -105,3 +106,6 @@ def install(context):
                 'background',
                 title = 'Background Pictures'
             )
+        back = portal['background']
+        back.setExcludeFromNav(True)
+        back.portal_workflow.doActionFor(back, 'publish')
