@@ -1,8 +1,10 @@
-<div id="portal-footer" tal:define="item viewlet/get_newest_newsitem" tal:condition="item">
-  <div id="news-container">
-    <a tal:content="item/Title" tal:attributes="href item/getURL">Testing UQMC Footer</a>
+<tal:exists define="item viewlet/get_newest_newsitem">
+  <div id="portal-footer" tal:condition="item">
+    <div id="news-container">
+      <a tal:content="item/Title" tal:attributes="href item/getURL">Testing UQMC Footer</a>
+    </div>
   </div>
-</div>
-<div id="more-news">
-  <a tal:attributes="href string:${context/portal_url}/about">More News</a><span>→</span>
-</div>
+  <div id="more-news" tal:condition="item">
+    <a tal:attributes="href string:${context/portal_url}/about">More News</a><span>→</span>
+  </div>
+</tal:exists>
