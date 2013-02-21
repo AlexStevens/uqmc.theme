@@ -95,9 +95,12 @@
     font-family: MuseoSlab500Regular;
 }
 
-.carousel.carousel-fade .carousel-inner .item #description,
-#news-container a {
+.carousel.carousel-fade .carousel-inner .item #description {
     padding: 24px;
+}
+
+#news-container a {
+    padding: 0 24px;
 }
 
 .carousel.carousel-fade .carousel-inner .item #description .location {

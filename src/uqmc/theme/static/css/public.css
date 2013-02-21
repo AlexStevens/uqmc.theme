@@ -109,9 +109,18 @@ sub {
     z-index: 4;
 }
 
-#portal-columns {
+body.portaltype-plone-site #portal-columns {
     position: relative;
     z-index: 3;
+}
+
+body.portaltype-plone-site #portal-column-content {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.6);
+}
+
+body.portaltype-plone-site #middle-container {
+    margin-bottom: 8em;
 }
 
 #portal-logo {
@@ -640,7 +649,7 @@ dl.portlet a:hover {
 
 #content .documentDescription,
 #content #description {
-    color: #666;
+    color: White;
     margin-left: 0;
     font: bold 1.25em "Helvetica Neue", Arial, FreeSans, sans-serif;
 }
