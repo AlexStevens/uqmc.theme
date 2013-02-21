@@ -104,6 +104,10 @@ sub {
 
 /* @group Navigation/search */
 
+.formHelp {
+    color: White;
+}
+
 #portal-header, #portal-between {
     position: relative;
     z-index: 4;
