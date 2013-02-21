@@ -92,6 +92,7 @@
     width: 100%;
     background-color: rgb(0,0,0);
     background-color: rgba(0, 0, 0, 0.8);
+    font-family: MuseoSlab500Regular;
 }
 
 .carousel.carousel-fade .carousel-inner .item #description,
@@ -101,6 +102,5 @@
 
 .carousel.carousel-fade .carousel-inner .item #description .location {
     margin-left: 5px;
-    font-weight: bold;
     color: #748e8e;
 }
