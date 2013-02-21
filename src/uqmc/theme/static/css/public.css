@@ -120,9 +120,9 @@ sub {
     letter-spacing: -0.75em;
     display: inline-block;
     margin-left: 3.7em;
-    min-width: 1100px;
 }
 #portal-logo a {
+    white-space: nowrap;
     font-size: 139px;
     line-height: 1.05em;
     color: #ee2f24;
@@ -722,9 +722,12 @@ dd.image-caption {
 }
 
 #portal-footer {
+    width: 100%;
+}
+
+#portal-footer, #more-news {
     font-size: 30px;
     font-family: MuseoSlab500Regular;
-    line-height: 1em;
     color: White;
 }
 
@@ -743,9 +746,11 @@ dd.image-caption {
     text-decoration: underline;
 }
 
-#portal-footer div {
-    display: inline-block;
-    padding: 0.5em 0.75em;
+#more-news {
+    float: right;
+    position: relative;
+    left: 7.3em;
+    margin-top: -1.6em;
 }
 
 #portal-footer #news-container {
@@ -757,6 +762,7 @@ dd.image-caption {
     background: -ms-linear-gradient(left, #ee2f24 0%,#bf1e6f 100%); /* IE10+ */
     background: linear-gradient(to right, #ee2f24 0%,#bf1e6f 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee2f24', endColorstr='#bf1e6f',GradientType=1 ); /* IE6-9 */
+    line-height: 2em;
 }
 
 #portal-colophon {

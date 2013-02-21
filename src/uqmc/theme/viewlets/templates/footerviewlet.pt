@@ -2,7 +2,7 @@
   <div id="news-container">
     <a tal:content="item/Title" tal:attributes="href item/getURL">Testing UQMC Footer</a>
   </div>
-  <div id="more-news">
-    <a tal:attributes="href string:${context/portal_url}/about">More News</a><span>→</span>
-  </div>
+</div>
+<div id="more-news">
+  <a tal:attributes="href string:${context/portal_url}/about">More News</a><span>→</span>
 </div>
